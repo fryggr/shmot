@@ -1,0 +1,136 @@
+# Продакшен на одном сервере. Запуск (на сервере, из корня репозитория):
+#   docker compose --env-file .env.prod -f infra/compose.prod.yaml up -d --build
+# Наружу открыты только 80/443 (Caddy, автоматический HTTPS). API, база, Redis,
+# хранилище снимков и /internal/* снаружи недоступны.
+name: fashion-search-prod
+
+x-logging: &logging
+  driver: json-file
+  options: {max-size: "20m", max-file: "5"}
+
+x-python: &python
+  build:
+    context: ..
+    dockerfile: infra/python.Dockerfile
+  restart: unless-stopped
+  logging: *logging
+  environment: &python-env
+    DATABASE_URL: postgresql://fashion:${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}@postgres:5432/fashion
+    REDIS_URL: redis://redis:6379/0
+    OBJECT_STORAGE_ENDPOINT: http://objectstore:8333
+    OBJECT_STORAGE_BUCKET: feed-snapshots
+    OBJECT_STORAGE_ACCESS_KEY: internal
+    OBJECT_STORAGE_SECRET_KEY: internal
+    AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+    AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+    FEED_URL_DEMO_SHOP_A: ${FEED_URL_DEMO_SHOP_A:-fixture://demo_shop_a_v1.yml}
+    FEED_URL_DEMO_SHOP_B: ${FEED_URL_DEMO_SHOP_B:-fixture://demo_shop_b_v1.yml}
+    FEED_ALLOWED_HOSTS: ${FEED_ALLOWED_HOSTS:-}
+    INTERNAL_API_TOKEN: ${INTERNAL_API_TOKEN:?set INTERNAL_API_TOKEN}
+    CURSOR_SECRET: ${CURSOR_SECRET:?set CURSOR_SECRET}
+    RATE_LIMIT_PER_MINUTE: ${RATE_LIMIT_PER_MINUTE:-120}
+    # API доступен только из внутренней сети, поэтому X-Forwarded-For от web/Caddy доверенный
+    TRUST_FORWARDED_FOR: "1"
+
+services:
+  caddy:
+    image: caddy:2.10.2-alpine
+    restart: unless-stopped
+    logging: *logging
+    ports: ["80:80", "443:443", "443:443/udp"]
+    environment:
+      DOMAIN: ${DOMAIN:?set DOMAIN}
+      ACME_EMAIL: ${ACME_EMAIL:?set ACME_EMAIL}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy_data:/data
+      - caddy_config:/config
+    depends_on: [web]
+
+  postgres:
+    image: pgvector/pgvector:0.8.0-pg16
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      POSTGRES_USER: fashion
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD:?set POSTGRES_PASSWORD}
+      POSTGRES_DB: fashion
+    volumes: [pgdata:/var/lib/postgresql/data]
+    shm_size: 256mb
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fashion -d fashion"]
+      interval: 5s
+      retries: 30
+
+  redis:
+    image: redis:7.4-alpine
+    restart: unless-stopped
+    logging: *logging
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes: [redisdata:/data]
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 5s
+      retries: 30
+
+  objectstore:
+    image: chrislusf/seaweedfs:3.97
+    restart: unless-stopped
+    logging: *logging
+    command: server -dir=/data -s3 -s3.port=8333 -master.volumeSizeLimitMB=256
+    volumes: [snapshots:/data]
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8333/ || exit 1"]
+      interval: 5s
+      retries: 40
+
+  init:
+    <<: *python
+    restart: "no"
+    command: ["/app/infra/init.sh"]
+    environment:
+      <<: *python-env
+      DEMO_IMPORT_ON_START: ${DEMO_IMPORT_ON_START:-1}
+    depends_on:
+      postgres: {condition: service_healthy}
+      objectstore: {condition: service_healthy}
+
+  api:
+    <<: *python
+    command: ["uvicorn", "fashion_api.main:app", "--host", "0.0.0.0", "--port", "8000",
+              "--workers", "${API_WORKERS:-2}", "--proxy-headers", "--forwarded-allow-ips", "*"]
+    depends_on:
+      init: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/ready')"]
+      interval: 10s
+      retries: 20
+
+  worker:
+    <<: *python
+    command: ["fashion-worker", "run"]
+    depends_on:
+      init: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+      objectstore: {condition: service_healthy}
+
+  web:
+    build:
+      context: ..
+      dockerfile: infra/web.Dockerfile
+      args:
+        API_INTERNAL_URL: http://api:8000
+    restart: unless-stopped
+    logging: *logging
+    environment:
+      API_INTERNAL_URL: http://api:8000
+    depends_on:
+      api: {condition: service_healthy}
+
+volumes:
+  pgdata:
+  redisdata:
+  snapshots:
+  caddy_data:
+  caddy_config:

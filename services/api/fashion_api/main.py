@@ -2,6 +2,7 @@
 from __future__ import annotations
 
 import logging
+import os
 import time
 import uuid
 from contextlib import asynccontextmanager
@@ -21,6 +22,18 @@ log = logging.getLogger("fashion_api")
 RATE_LIMITED_PREFIXES = ("/api/v1/search", "/api/v1/out/")
 
 
+def client_key(request: Request) -> str:
+    """IP клиента для лимита. За reverse proxy и web все запросы приходят с одного адреса,
+    поэтому при TRUST_FORWARDED_FOR=1 берётся первый адрес из X-Forwarded-For. Включать
+    только если API недоступен снаружи напрямую (как в infra/compose.prod.yaml)."""
+    if os.environ.get("TRUST_FORWARDED_FOR") == "1":
+        forwarded = request.headers.get("x-forwarded-for", "")
+        first = forwarded.split(",")[0].strip()
+        if first:
+            return first
+    return request.client.host if request.client else "unknown"
+
+
 def create_app() -> FastAPI:
     setup_logging()
 
@@ -38,8 +51,7 @@ def create_app() -> FastAPI:
     async def request_context(request: Request, call_next):
         request.state.request_id = request.headers.get("x-request-id") or str(uuid.uuid4())
         if request.url.path.startswith(RATE_LIMITED_PREFIXES):
-            client = request.client.host if request.client else "unknown"
-            if not app.state.limiter.allow(client):
+            if not app.state.limiter.allow(client_key(request)):
                 return JSONResponse(
                     errors.error_body(request, "rate_limited", "too many requests"), status_code=429,
                     headers={"Retry-After": "60", "X-Request-ID": request.state.request_id},

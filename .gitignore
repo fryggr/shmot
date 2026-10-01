@@ -5,6 +5,7 @@ __pycache__/
 .pytest_cache/
 .data/
 .env
+.env.prod
 node_modules/
 apps/web/.next/
 apps/web/next-env.d.ts

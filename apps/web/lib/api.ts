@@ -1,4 +1,5 @@
 // Типы и серверный клиент API v1. Вызывается из серверных компонентов.
+import { headers } from "next/headers";
 
 export type Size = { system: string | null; label: string | null };
 
@@ -109,10 +110,26 @@ export class ApiError extends Error {
 
 const API = process.env.API_INTERNAL_URL || "http://localhost:8000";
 
+// IP пользователя передаётся API для rate limit (иначе все запросы идут с адреса web-сервера)
+async function clientHeaders(): Promise<Record<string, string>> {
+  try {
+    const h = await headers();
+    const ip = h.get("x-forwarded-for") || h.get("x-real-ip");
+    return ip ? { "x-forwarded-for": ip } : {};
+  } catch {
+    return {};
+  }
+}
+
 async function call<T>(path: string, init?: RequestInit): Promise<T> {
   let res: Response;
   try {
-    res = await fetch(`${API}${path}`, { ...init, cache: "no-store" });
+    const extra = await clientHeaders();
+    res = await fetch(`${API}${path}`, {
+      ...init,
+      headers: { ...(init?.headers as Record<string, string> | undefined), ...extra },
+      cache: "no-store",
+    });
   } catch {
     throw new ApiError(503, "api_unreachable", "API недоступен");
   }

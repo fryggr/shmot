@@ -51,6 +51,7 @@ cd apps/web && npm ci && API_INTERNAL_URL=http://localhost:8000 npm run dev
 `FEED_URL_DEMO_SHOP_A=fixture://demo_shop_a_v2.yml fashion-worker import demo-shop-a`.
 
 Импорт, восстановление, held-публикации, перестройка индекса — [docs/operations.md](docs/operations.md).
+Выкатка на сервер (HTTPS, бэкапы, обновления) — [docs/deploy.md](docs/deploy.md).
 
 ## Тесты
 

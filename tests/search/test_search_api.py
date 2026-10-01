@@ -269,3 +269,19 @@ def test_rate_limit_returns_429(demo):
     demo.app.state.limiter.per_minute = 2
     codes = [demo.post("/api/v1/search", json={"q": "a"}).status_code for _ in range(3)]
     assert codes == [200, 200, 429]
+
+
+def test_rate_limit_uses_forwarded_ip_only_when_trusted(demo, monkeypatch):
+    demo.app.state.limiter.per_minute = 1
+    monkeypatch.setenv("TRUST_FORWARDED_FOR", "1")
+    a = demo.post("/api/v1/search", json={"q": "a"}, headers={"x-forwarded-for": "203.0.113.1"})
+    b = demo.post("/api/v1/search", json={"q": "a"}, headers={"x-forwarded-for": "203.0.113.2, 10.0.0.1"})
+    again = demo.post("/api/v1/search", json={"q": "a"}, headers={"x-forwarded-for": "203.0.113.1"})
+    assert (a.status_code, b.status_code, again.status_code) == (200, 200, 429)
+
+    monkeypatch.delenv("TRUST_FORWARDED_FOR")
+    demo.app.state.limiter.per_minute = 1
+    demo.app.state.limiter._counts = {}
+    first = demo.post("/api/v1/search", json={"q": "a"}, headers={"x-forwarded-for": "203.0.113.3"})
+    spoofed = demo.post("/api/v1/search", json={"q": "a"}, headers={"x-forwarded-for": "203.0.113.4"})
+    assert (first.status_code, spoofed.status_code) == (200, 429)  # без доверия заголовок игнорируется
