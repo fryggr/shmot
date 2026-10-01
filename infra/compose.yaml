@@ -1,14 +1,12 @@
 # Локальный стенд: docker compose -f infra/compose.yaml up --build
 # Web: http://localhost:3000   API: http://localhost:8000/docs
+# Свои значения переменных: docker compose --env-file .env -f infra/compose.yaml up --build
 name: fashion-search
 
 x-python: &python
   build:
     context: ..
     dockerfile: infra/python.Dockerfile
-  env_file:
-    - path: ../.env
-      required: false
   environment: &python-env
     DATABASE_URL: postgresql://fashion:fashion@postgres:5432/fashion
     REDIS_URL: redis://redis:6379/0
@@ -21,6 +19,7 @@ x-python: &python
     # Демо-фиды из образа; реальные URL фидов задаются только через секреты (.env), не в git
     FEED_URL_DEMO_SHOP_A: ${FEED_URL_DEMO_SHOP_A:-fixture://demo_shop_a_v1.yml}
     FEED_URL_DEMO_SHOP_B: ${FEED_URL_DEMO_SHOP_B:-fixture://demo_shop_b_v1.yml}
+    FEED_ALLOWED_HOSTS: ${FEED_ALLOWED_HOSTS:-}
     INTERNAL_API_TOKEN: ${INTERNAL_API_TOKEN:-change-me-local-only}
     CURSOR_SECRET: ${CURSOR_SECRET:-change-me-local-only}
 

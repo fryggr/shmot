@@ -18,6 +18,7 @@ docker compose -f infra/compose.yaml up --build
 * API и Swagger: <http://localhost:8000/docs>
 * Сервис `init` один раз применяет миграции, заводит демо-источники и импортирует демо-фиды
   (отключить импорт: `DEMO_IMPORT_ON_START=0`).
+* Свои значения переменных (токены, URL фидов): `docker compose --env-file .env -f infra/compose.yaml up --build`.
 * OpenSearch нужен с этапа 3: `docker compose -f infra/compose.yaml --profile search up`.
 
 Сервисы: PostgreSQL 16 + pgvector, Redis (очередь заданий), SeaweedFS (локальное S3-совместимое
