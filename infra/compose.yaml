@@ -1,5 +1,6 @@
 # Локальный стенд: docker compose -f infra/compose.yaml up --build
 # Web: http://localhost:3000   API: http://localhost:8000/docs
+# Порты на хосте меняются переменными POSTGRES_HOST_PORT (55432), API_HOST_PORT, WEB_HOST_PORT.
 # Свои значения переменных: docker compose --env-file .env -f infra/compose.yaml up --build
 name: fashion-search
 
@@ -31,7 +32,7 @@ services:
       POSTGRES_PASSWORD: fashion
       POSTGRES_DB: fashion
     volumes: [pgdata:/var/lib/postgresql/data]
-    ports: ["127.0.0.1:5432:5432"]
+    ports: ["127.0.0.1:${POSTGRES_HOST_PORT:-55432}:5432"]
     healthcheck:
       test: ["CMD-SHELL", "pg_isready -U fashion -d fashion"]
       interval: 3s
@@ -63,7 +64,7 @@ services:
       DISABLE_SECURITY_PLUGIN: "true"
       DISABLE_INSTALL_DEMO_CONFIG: "true"
       OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
-    ports: ["127.0.0.1:9200:9200"]
+    ports: ["127.0.0.1:${OPENSEARCH_HOST_PORT:-9200}:9200"]
 
   init:
     <<: *python
@@ -78,7 +79,7 @@ services:
 
   api:
     <<: *python
-    ports: ["127.0.0.1:8000:8000"]
+    ports: ["127.0.0.1:${API_HOST_PORT:-8000}:8000"]
     depends_on:
       init: {condition: service_completed_successfully}
       redis: {condition: service_healthy}
@@ -103,7 +104,7 @@ services:
         API_INTERNAL_URL: http://api:8000
     environment:
       API_INTERNAL_URL: http://api:8000
-    ports: ["127.0.0.1:3000:3000"]
+    ports: ["127.0.0.1:${WEB_HOST_PORT:-3000}:3000"]
     depends_on:
       api: {condition: service_healthy}
 

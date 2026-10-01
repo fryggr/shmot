@@ -18,6 +18,8 @@ docker compose -f infra/compose.yaml up --build
 * API и Swagger: <http://localhost:8000/docs>
 * Сервис `init` один раз применяет миграции, заводит демо-источники и импортирует демо-фиды
   (отключить импорт: `DEMO_IMPORT_ON_START=0`).
+* PostgreSQL стенда доступен с хоста на `localhost:55432` (не 5432 — чтобы не конфликтовать с локальным
+  Postgres). Если заняты 8000/3000: `API_HOST_PORT=8001 WEB_HOST_PORT=3001 docker compose ...`.
 * Свои значения переменных (токены, URL фидов): `docker compose --env-file .env -f infra/compose.yaml up --build`.
 * OpenSearch нужен с этапа 3: `docker compose -f infra/compose.yaml --profile search up`.
 
