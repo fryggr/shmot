@@ -1,0 +1,20 @@
+# Материалы. Имитации — отдельные коды: «экокожа» ≠ leather, «под замшу» ≠ suede.
+# Более длинные/специфичные формы проверяются раньше коротких.
+version: materials-v1
+materials:
+  faux_leather: [экокожа, эко-кожа, искусственная кожа, кожзам, иск. кожа, полиуретан]
+  faux_suede: [под замшу, искусственная замша, иск. замша, микрофибра под замшу]
+  faux_fur: [искусственный мех, эко-мех, экомех]
+  leather: [натуральная кожа, кожа, leather]
+  suede: [натуральная замша, замша, suede]
+  wool: [шерсть, wool, мериносовая шерсть, меринос]
+  cashmere: [кашемир, cashmere]
+  cotton: [хлопок, cotton]
+  linen: [лен, лён, linen]
+  silk: [шелк, шёлк, silk]
+  polyester: [полиэстер, polyester]
+  viscose: [вискоза, viscose]
+  nylon: [нейлон, полиамид, nylon]
+  elastane: [эластан, elastane, спандекс]
+  denim: [деним, denim]
+  acrylic: [акрил, acrylic]

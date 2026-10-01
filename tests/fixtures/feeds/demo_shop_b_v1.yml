@@ -1,0 +1,575 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ДЕМОНСТРАЦИОННЫЕ ДАННЫЕ: вымышленный магазин, бренды и товары. -->
+<yml_catalog date="2026-09-29 12:00">
+  <shop>
+    <name>Demo Shop B</name>
+    <company>Demo Shop B (demo)</company>
+    <url>https://demo-shop-b.example/</url>
+    <currencies><currency id="RUR" rate="1"/></currencies>
+    <categories>
+      <category id="1">Женщинам</category>
+      <category id="2" parentId="1">Верхняя одежда</category>
+      <category id="3" parentId="2">Куртки</category>
+      <category id="4" parentId="2">Пальто</category>
+      <category id="5" parentId="2">Тренчи</category>
+      <category id="6" parentId="2">Бомберы</category>
+      <category id="7" parentId="1">Платья</category>
+      <category id="8" parentId="1">Юбки</category>
+      <category id="9" parentId="1">Обувь</category>
+      <category id="10" parentId="9">Лоферы</category>
+      <category id="11" parentId="9">Кроссовки</category>
+      <category id="12" parentId="9">Ботинки</category>
+      <category id="13" parentId="1">Сумки</category>
+      <category id="14" parentId="1">Джинсы</category>
+      <category id="15" parentId="1">Трикотаж</category>
+      <category id="16" parentId="1">Футболки</category>
+      <category id="17" parentId="1">Рубашки</category>
+      <category id="18" parentId="1">Брюки</category>
+      <category id="19" parentId="1">Топы</category>
+      <category id="99" parentId="1">Разное</category>
+    </categories>
+    <offers>
+      <offer id="B-77001-BLK-38" group_id="B-77001" available="false">
+        <url>https://demo-shop-b.example/p/b-77001?sku=B-77001-BLK-38</url>
+        <price>15000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77001-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77001-blk-2.jpg</picture>
+        <name>Лоферы из кожи Nord Demo</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">38</param>
+        <param name="Цвет">чёрный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">кожа</param>
+        <param name="Состав">100% натуральная кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77001-BLK-39" group_id="B-77001" available="true">
+        <url>https://demo-shop-b.example/p/b-77001?sku=B-77001-BLK-39</url>
+        <price>15000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77001-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77001-blk-2.jpg</picture>
+        <name>Лоферы из кожи Nord Demo</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">39</param>
+        <param name="Цвет">чёрный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">кожа</param>
+        <param name="Состав">100% натуральная кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77001-BLK-40" group_id="B-77001" available="true">
+        <url>https://demo-shop-b.example/p/b-77001?sku=B-77001-BLK-40</url>
+        <price>15000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77001-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77001-blk-2.jpg</picture>
+        <name>Лоферы из кожи Nord Demo</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">40</param>
+        <param name="Цвет">чёрный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">кожа</param>
+        <param name="Состав">100% натуральная кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77002-BRN-38" group_id="B-77002" available="true">
+        <url>https://demo-shop-b.example/p/b-77002?sku=B-77002-BRN-38</url>
+        <price>15500.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77002-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77002-brn-2.jpg</picture>
+        <name>Лоферы из кожи Nord Demo</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">38</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">кожа</param>
+        <param name="Состав">100% натуральная кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77002-BRN-39" group_id="B-77002" available="true">
+        <url>https://demo-shop-b.example/p/b-77002?sku=B-77002-BRN-39</url>
+        <price>15500.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77002-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77002-brn-2.jpg</picture>
+        <name>Лоферы из кожи Nord Demo</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">39</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">кожа</param>
+        <param name="Состав">100% натуральная кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77003-BRN-44" group_id="B-77003" available="true">
+        <url>https://demo-shop-b.example/p/b-77003?sku=B-77003-BRN-44</url>
+        <price>31990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77003-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77003-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J777</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77003-BRN-46" group_id="B-77003" available="true">
+        <url>https://demo-shop-b.example/p/b-77003?sku=B-77003-BRN-46</url>
+        <price>31990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77003-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77003-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J777</vendorCode>
+        <param name="Размер" unit="RU">46</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77003-BRN-48" group_id="B-77003">
+        <url>https://demo-shop-b.example/p/b-77003?sku=B-77003-BRN-48</url>
+        <price>31990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77003-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77003-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J777</vendorCode>
+        <param name="Размер" unit="RU">48</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77004-BLK-46" group_id="B-77004" available="true">
+        <url>https://demo-shop-b.example/p/b-77004?sku=B-77004-BLK-46</url>
+        <price>19990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77004-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77004-blk-2.jpg</picture>
+        <name>Куртка пуховая</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-P100</vendorCode>
+        <param name="Размер" unit="RU">46</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">мужской</param>
+      </offer>
+      <offer id="B-77004-BLK-48" group_id="B-77004" available="true">
+        <url>https://demo-shop-b.example/p/b-77004?sku=B-77004-BLK-48</url>
+        <price>19990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77004-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77004-blk-2.jpg</picture>
+        <name>Куртка пуховая</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-P100</vendorCode>
+        <param name="Размер" unit="RU">48</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">мужской</param>
+      </offer>
+      <offer id="B-77004-BLK-50" group_id="B-77004" available="true">
+        <url>https://demo-shop-b.example/p/b-77004?sku=B-77004-BLK-50</url>
+        <price>19990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77004-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77004-blk-2.jpg</picture>
+        <name>Куртка пуховая</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-P100</vendorCode>
+        <param name="Размер" unit="RU">50</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">мужской</param>
+      </offer>
+      <offer id="B-77005-WHT-42" group_id="B-77005" available="true">
+        <url>https://demo-shop-b.example/p/b-77005?sku=B-77005-WHT-42</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77005-wht-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77005-wht-2.jpg</picture>
+        <name>Платье-рубашка белое</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D300</vendorCode>
+        <param name="Размер" unit="RU">42</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77005-WHT-44" group_id="B-77005" available="true">
+        <url>https://demo-shop-b.example/p/b-77005?sku=B-77005-WHT-44</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77005-wht-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77005-wht-2.jpg</picture>
+        <name>Платье-рубашка белое</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D300</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77005-WHT-46" group_id="B-77005">
+        <url>https://demo-shop-b.example/p/b-77005?sku=B-77005-WHT-46</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77005-wht-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77005-wht-2.jpg</picture>
+        <name>Платье-рубашка белое</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D300</vendorCode>
+        <param name="Размер" unit="RU">46</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77006-GRY-42" group_id="B-77006" available="true">
+        <url>https://demo-shop-b.example/p/b-77006?sku=B-77006-GRY-42</url>
+        <price>5990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77006-gry-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77006-gry-2.jpg</picture>
+        <name>Юбка плиссе миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S200</vendorCode>
+        <param name="Размер" unit="RU">42</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77006-GRY-44" group_id="B-77006" available="true">
+        <url>https://demo-shop-b.example/p/b-77006?sku=B-77006-GRY-44</url>
+        <price>5990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77006-gry-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77006-gry-2.jpg</picture>
+        <name>Юбка плиссе миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S200</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77007-BRN-37" group_id="B-77007" available="true">
+        <url>https://demo-shop-b.example/p/b-77007?sku=B-77007-BRN-37</url>
+        <price>16990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77007-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77007-brn-2.jpg</picture>
+        <name>Ботинки челси замшевые</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-B300</vendorCode>
+        <param name="Размер" unit="RU">37</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77007-BRN-38" group_id="B-77007" available="true">
+        <url>https://demo-shop-b.example/p/b-77007?sku=B-77007-BRN-38</url>
+        <price>16990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77007-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77007-brn-2.jpg</picture>
+        <name>Ботинки челси замшевые</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-B300</vendorCode>
+        <param name="Размер" unit="RU">38</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77007-BRN-39" group_id="B-77007" available="true">
+        <url>https://demo-shop-b.example/p/b-77007?sku=B-77007-BRN-39</url>
+        <price>16990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>12</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77007-brn-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77007-brn-2.jpg</picture>
+        <name>Ботинки челси замшевые</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-B300</vendorCode>
+        <param name="Размер" unit="RU">39</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77008-BRD-OS" group_id="B-77008">
+        <url>https://demo-shop-b.example/p/b-77008?sku=B-77008-BRD-OS</url>
+        <price>5990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>13</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77008-brd-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77008-brd-2.jpg</picture>
+        <name>Сумка-тоут бордо</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-BG200</vendorCode>
+        <param name="Цвет">бордо</param>
+        <param name="Код цвета">BRD</param>
+        <param name="Материал">экокожа</param>
+        <param name="Состав">100% полиуретан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77009-BLU-44" group_id="B-77009" available="true">
+        <url>https://demo-shop-b.example/p/b-77009?sku=B-77009-BLU-44</url>
+        <price>5490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77009-blu-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77009-blu-2.jpg</picture>
+        <name>Джинсы прямые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN200</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77009-BLU-46" group_id="B-77009" available="true">
+        <url>https://demo-shop-b.example/p/b-77009?sku=B-77009-BLU-46</url>
+        <price>5490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77009-blu-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77009-blu-2.jpg</picture>
+        <name>Джинсы прямые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN200</vendorCode>
+        <param name="Размер" unit="RU">46</param>
+        <param name="Цвет">синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77009-BLU-48" group_id="B-77009" available="true">
+        <url>https://demo-shop-b.example/p/b-77009?sku=B-77009-BLU-48</url>
+        <price>5490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77009-blu-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77009-blu-2.jpg</picture>
+        <name>Джинсы прямые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN200</vendorCode>
+        <param name="Размер" unit="RU">48</param>
+        <param name="Цвет">синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77010-BLK-42" group_id="B-77010" available="true">
+        <url>https://demo-shop-b.example/p/b-77010?sku=B-77010-BLK-42</url>
+        <price>13990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>18</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77010-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77010-blk-2.jpg</picture>
+        <name>Брюки широкие из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-TR100</vendorCode>
+        <param name="Размер" unit="RU">42</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">50% шерсть, 50% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77010-BLK-44" group_id="B-77010" available="true">
+        <url>https://demo-shop-b.example/p/b-77010?sku=B-77010-BLK-44</url>
+        <price>13990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>18</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77010-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77010-blk-2.jpg</picture>
+        <name>Брюки широкие из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-TR100</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">50% шерсть, 50% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77011-PNK-44" group_id="B-77011">
+        <url>https://demo-shop-b.example/p/b-77011?sku=B-77011-PNK-44</url>
+        <price>7990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77011-pnk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77011-pnk-2.jpg</picture>
+        <name>Кардиган крупной вязки</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-K200</vendorCode>
+        <param name="Размер">44</param>
+        <param name="Цвет">розовый</param>
+        <param name="Код цвета">PNK</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77011-PNK-46" group_id="B-77011">
+        <url>https://demo-shop-b.example/p/b-77011?sku=B-77011-PNK-46</url>
+        <price>7990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77011-pnk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77011-pnk-2.jpg</picture>
+        <name>Кардиган крупной вязки</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-K200</vendorCode>
+        <param name="Размер">46</param>
+        <param name="Цвет">розовый</param>
+        <param name="Код цвета">PNK</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77013-BLK-42" group_id="B-77013" available="true">
+        <url>https://demo-shop-b.example/p/b-77013?sku=B-77013-BLK-42</url>
+        <price>2990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>19</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77013-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77013-blk-2.jpg</picture>
+        <name>Топ на тонких бретелях</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-TP100</vendorCode>
+        <param name="Размер" unit="RU">42</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">95% вискоза, 5% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77013-BLK-44" group_id="B-77013" available="true">
+        <url>https://demo-shop-b.example/p/b-77013?sku=B-77013-BLK-44</url>
+        <price>2990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>19</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77013-blk-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77013-blk-2.jpg</picture>
+        <name>Топ на тонких бретелях</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-TP100</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">95% вискоза, 5% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77012-BEI-42" group_id="B-77012" available="true">
+        <url>https://demo-shop-b.example/p/b-77012?sku=B-77012-BEI-42</url>
+        <price>39990.00</price>
+        <oldprice>39990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77012-bei-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77012-bei-2.jpg</picture>
+        <name>Пальто-кокон</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-C300</vendorCode>
+        <param name="Размер" unit="RU">42</param>
+        <param name="Цвет">песочный</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">100% шерсть</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-77012-BEI-44" group_id="B-77012" available="true">
+        <url>https://demo-shop-b.example/p/b-77012?sku=B-77012-BEI-44</url>
+        <price>39990.00</price>
+        <oldprice>39990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-b.example/img/b-77012-bei-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-77012-bei-2.jpg</picture>
+        <name>Пальто-кокон</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-C300</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">песочный</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">100% шерсть</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="B-BROKEN-CUR" group_id="B-BROKEN" available="true">
+        <url>https://demo-shop-b.example/p/b-broken?sku=B-BROKEN-CUR</url>
+        <price>1000.00</price>
+        <currencyId>USD</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-b.example/img/b-broken-x-1.jpg</picture>
+        <picture>https://demo-shop-b.example/img/b-broken-x-2.jpg</picture>
+        <name>Куртка пуховая</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-P100</vendorCode>
+        <param name="Размер" unit="RU">44</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">X</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">мужской</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

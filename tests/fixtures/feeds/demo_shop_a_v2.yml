@@ -1,0 +1,1582 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- ДЕМОНСТРАЦИОННЫЕ ДАННЫЕ: вымышленный магазин, бренды и товары. -->
+<yml_catalog date="2026-09-30 10:00">
+  <shop>
+    <name>Demo Shop A</name>
+    <company>Demo Shop A (demo)</company>
+    <url>https://demo-shop-a.example/</url>
+    <currencies><currency id="RUR" rate="1"/></currencies>
+    <categories>
+      <category id="1">Женщинам</category>
+      <category id="2" parentId="1">Верхняя одежда</category>
+      <category id="3" parentId="2">Куртки</category>
+      <category id="4" parentId="2">Пальто</category>
+      <category id="5" parentId="2">Тренчи</category>
+      <category id="6" parentId="2">Бомберы</category>
+      <category id="7" parentId="1">Платья</category>
+      <category id="8" parentId="1">Юбки</category>
+      <category id="9" parentId="1">Обувь</category>
+      <category id="10" parentId="9">Лоферы</category>
+      <category id="11" parentId="9">Кроссовки</category>
+      <category id="12" parentId="9">Ботинки</category>
+      <category id="13" parentId="1">Сумки</category>
+      <category id="14" parentId="1">Джинсы</category>
+      <category id="15" parentId="1">Трикотаж</category>
+      <category id="16" parentId="1">Футболки</category>
+      <category id="17" parentId="1">Рубашки</category>
+      <category id="18" parentId="1">Брюки</category>
+      <category id="19" parentId="1">Топы</category>
+      <category id="99" parentId="1">Разное</category>
+    </categories>
+    <offers>
+      <offer id="A-JKT-01-BRN-XS" group_id="A-JKT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-01?sku=A-JKT-01-BRN-XS</url>
+        <price>27990.00</price>
+        <oldprice>34990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <description>Свободная куртка из мягкой замши.</description>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-01-BRN-S" group_id="A-JKT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-01?sku=A-JKT-01-BRN-S</url>
+        <price>27990.00</price>
+        <oldprice>34990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <description>Свободная куртка из мягкой замши.</description>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-01-BRN-M" group_id="A-JKT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-01?sku=A-JKT-01-BRN-M</url>
+        <price>27990.00</price>
+        <oldprice>34990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <description>Свободная куртка из мягкой замши.</description>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-01-BRN-L" group_id="A-JKT-01" available="false">
+        <url>https://demo-shop-a.example/p/a-jkt-01?sku=A-JKT-01-BRN-L</url>
+        <price>27990.00</price>
+        <oldprice>34990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <description>Свободная куртка из мягкой замши.</description>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-01-BRN-XL" group_id="A-JKT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-01?sku=A-JKT-01-BRN-XL</url>
+        <price>27990.00</price>
+        <oldprice>34990.00</oldprice>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-01-brn-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <description>Свободная куртка из мягкой замши.</description>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-02-BRN-XS" group_id="A-JKT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-02?sku=A-JKT-02-BRN-XS</url>
+        <price>8990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-2.jpg</picture>
+        <name>Куртка под замшу укороченная</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J210</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">искусственная замша</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-02-BRN-S" group_id="A-JKT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-02?sku=A-JKT-02-BRN-S</url>
+        <price>8990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-2.jpg</picture>
+        <name>Куртка под замшу укороченная</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J210</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">искусственная замша</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-02-BRN-M" group_id="A-JKT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-02?sku=A-JKT-02-BRN-M</url>
+        <price>8990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-2.jpg</picture>
+        <name>Куртка под замшу укороченная</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J210</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">искусственная замша</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-02-BRN-L" group_id="A-JKT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-02?sku=A-JKT-02-BRN-L</url>
+        <price>8990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-2.jpg</picture>
+        <name>Куртка под замшу укороченная</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J210</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">искусственная замша</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-02-BRN-XL" group_id="A-JKT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-02?sku=A-JKT-02-BRN-XL</url>
+        <price>8990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-2.jpg</picture>
+        <name>Куртка под замшу укороченная</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J210</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">искусственная замша</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-03-BLK-XS" group_id="A-JKT-03" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-03?sku=A-JKT-03-BLK-XS</url>
+        <price>11990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-2.jpg</picture>
+        <name>Куртка-рубашка из экокожи</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J220</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">экокожа</param>
+        <param name="Состав">100% полиуретан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-03-BLK-S" group_id="A-JKT-03" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-03?sku=A-JKT-03-BLK-S</url>
+        <price>11990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-2.jpg</picture>
+        <name>Куртка-рубашка из экокожи</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J220</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">экокожа</param>
+        <param name="Состав">100% полиуретан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-03-BLK-M" group_id="A-JKT-03" available="false">
+        <url>https://demo-shop-a.example/p/a-jkt-03?sku=A-JKT-03-BLK-M</url>
+        <price>11990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-2.jpg</picture>
+        <name>Куртка-рубашка из экокожи</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J220</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">экокожа</param>
+        <param name="Состав">100% полиуретан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-03-BLK-L" group_id="A-JKT-03" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-03?sku=A-JKT-03-BLK-L</url>
+        <price>11990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-2.jpg</picture>
+        <name>Куртка-рубашка из экокожи</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J220</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">экокожа</param>
+        <param name="Состав">100% полиуретан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-03-BLK-XL" group_id="A-JKT-03" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-03?sku=A-JKT-03-BLK-XL</url>
+        <price>11990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-03-blk-2.jpg</picture>
+        <name>Куртка-рубашка из экокожи</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J220</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">экокожа</param>
+        <param name="Состав">100% полиуретан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-04-BLK-S" group_id="A-JKT-04" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-04?sku=A-JKT-04-BLK-S</url>
+        <price>25000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-04-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-04-blk-2.jpg</picture>
+        <name>Кожаная куртка косуха</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-J300</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-04-BLK-M" group_id="A-JKT-04" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-04?sku=A-JKT-04-BLK-M</url>
+        <price>35000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-04-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-04-blk-2.jpg</picture>
+        <name>Кожаная куртка косуха</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-J300</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-04-BLK-L" group_id="A-JKT-04" available="false">
+        <url>https://demo-shop-a.example/p/a-jkt-04?sku=A-JKT-04-BLK-L</url>
+        <price>24000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-04-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-04-blk-2.jpg</picture>
+        <name>Кожаная куртка косуха</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-J300</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-01-GRY-XS" group_id="A-COAT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-01?sku=A-COAT-01-GRY-XS</url>
+        <price>32990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-2.jpg</picture>
+        <name>Пальто из шерсти миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-C100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">80% шерсть, 20% полиамид</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-01-GRY-S" group_id="A-COAT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-01?sku=A-COAT-01-GRY-S</url>
+        <price>32990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-2.jpg</picture>
+        <name>Пальто из шерсти миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-C100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">80% шерсть, 20% полиамид</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-01-GRY-M" group_id="A-COAT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-01?sku=A-COAT-01-GRY-M</url>
+        <price>32990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-2.jpg</picture>
+        <name>Пальто из шерсти миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-C100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">80% шерсть, 20% полиамид</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-01-GRY-L" group_id="A-COAT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-01?sku=A-COAT-01-GRY-L</url>
+        <price>32990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-2.jpg</picture>
+        <name>Пальто из шерсти миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-C100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">80% шерсть, 20% полиамид</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-01-GRY-XL" group_id="A-COAT-01" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-01?sku=A-COAT-01-GRY-XL</url>
+        <price>32990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-01-gry-2.jpg</picture>
+        <name>Пальто из шерсти миди</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-C100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">серый</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">80% шерсть, 20% полиамид</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-02-BEI-XS" group_id="A-COAT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-02?sku=A-COAT-02-BEI-XS</url>
+        <price>14990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-2.jpg</picture>
+        <name>Пальто прямого кроя без шерсти</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-C110</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">70% полиэстер, 30% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-02-BEI-S" group_id="A-COAT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-02?sku=A-COAT-02-BEI-S</url>
+        <price>14990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-2.jpg</picture>
+        <name>Пальто прямого кроя без шерсти</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-C110</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">70% полиэстер, 30% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-02-BEI-M" group_id="A-COAT-02">
+        <url>https://demo-shop-a.example/p/a-coat-02?sku=A-COAT-02-BEI-M</url>
+        <price>14990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-2.jpg</picture>
+        <name>Пальто прямого кроя без шерсти</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-C110</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">70% полиэстер, 30% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-02-BEI-L" group_id="A-COAT-02">
+        <url>https://demo-shop-a.example/p/a-coat-02?sku=A-COAT-02-BEI-L</url>
+        <price>14990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-2.jpg</picture>
+        <name>Пальто прямого кроя без шерсти</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-C110</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">70% полиэстер, 30% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-COAT-02-BEI-XL" group_id="A-COAT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-coat-02?sku=A-COAT-02-BEI-XL</url>
+        <price>14990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>4</categoryId>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-coat-02-bei-2.jpg</picture>
+        <name>Пальто прямого кроя без шерсти</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-C110</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">полиэстер</param>
+        <param name="Состав">70% полиэстер, 30% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TR-01-BEI-XS" group_id="A-TR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-tr-01?sku=A-TR-01-BEI-XS</url>
+        <price>19990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-2.jpg</picture>
+        <name>Тренч классический</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-T100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TR-01-BEI-S" group_id="A-TR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-tr-01?sku=A-TR-01-BEI-S</url>
+        <price>17990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-2.jpg</picture>
+        <name>Тренч классический</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-T100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TR-01-BEI-M" group_id="A-TR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-tr-01?sku=A-TR-01-BEI-M</url>
+        <price>17990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-2.jpg</picture>
+        <name>Тренч классический</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-T100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TR-01-BEI-L" group_id="A-TR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-tr-01?sku=A-TR-01-BEI-L</url>
+        <price>19990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-2.jpg</picture>
+        <name>Тренч классический</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-T100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TR-01-BEI-XL" group_id="A-TR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-tr-01?sku=A-TR-01-BEI-XL</url>
+        <price>19990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>5</categoryId>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-tr-01-bei-2.jpg</picture>
+        <name>Тренч классический</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-T100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">бежевый</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BMB-01-GRN-XS" group_id="A-BMB-01" available="true">
+        <url>https://demo-shop-a.example/p/a-bmb-01?sku=A-BMB-01-GRN-XS</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-2.jpg</picture>
+        <name>Бомбер оверсайз как мужской</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-B100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">хаки</param>
+        <param name="Код цвета">GRN</param>
+        <param name="Материал">нейлон</param>
+        <param name="Состав">100% нейлон</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BMB-01-GRN-S" group_id="A-BMB-01" available="true">
+        <url>https://demo-shop-a.example/p/a-bmb-01?sku=A-BMB-01-GRN-S</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-2.jpg</picture>
+        <name>Бомбер оверсайз как мужской</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-B100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">хаки</param>
+        <param name="Код цвета">GRN</param>
+        <param name="Материал">нейлон</param>
+        <param name="Состав">100% нейлон</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BMB-01-GRN-M" group_id="A-BMB-01" available="true">
+        <url>https://demo-shop-a.example/p/a-bmb-01?sku=A-BMB-01-GRN-M</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-2.jpg</picture>
+        <name>Бомбер оверсайз как мужской</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-B100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">хаки</param>
+        <param name="Код цвета">GRN</param>
+        <param name="Материал">нейлон</param>
+        <param name="Состав">100% нейлон</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BMB-01-GRN-L" group_id="A-BMB-01" available="true">
+        <url>https://demo-shop-a.example/p/a-bmb-01?sku=A-BMB-01-GRN-L</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-2.jpg</picture>
+        <name>Бомбер оверсайз как мужской</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-B100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">хаки</param>
+        <param name="Код цвета">GRN</param>
+        <param name="Материал">нейлон</param>
+        <param name="Состав">100% нейлон</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BMB-01-GRN-XL" group_id="A-BMB-01" available="true">
+        <url>https://demo-shop-a.example/p/a-bmb-01?sku=A-BMB-01-GRN-XL</url>
+        <price>9990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>6</categoryId>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-bmb-01-grn-2.jpg</picture>
+        <name>Бомбер оверсайз как мужской</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-B100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">хаки</param>
+        <param name="Код цвета">GRN</param>
+        <param name="Материал">нейлон</param>
+        <param name="Состав">100% нейлон</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-01-WHT-XS" group_id="A-DR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-01?sku=A-DR-01-WHT-XS</url>
+        <price>12990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-2.jpg</picture>
+        <name>Платье белое миди из льна</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">лен</param>
+        <param name="Состав">100% лен</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-01-WHT-S" group_id="A-DR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-01?sku=A-DR-01-WHT-S</url>
+        <price>12990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-2.jpg</picture>
+        <name>Платье белое миди из льна</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">лен</param>
+        <param name="Состав">100% лен</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-01-WHT-M" group_id="A-DR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-01?sku=A-DR-01-WHT-M</url>
+        <price>12990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-2.jpg</picture>
+        <name>Платье белое миди из льна</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">лен</param>
+        <param name="Состав">100% лен</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-01-WHT-L" group_id="A-DR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-01?sku=A-DR-01-WHT-L</url>
+        <price>12990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-2.jpg</picture>
+        <name>Платье белое миди из льна</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">лен</param>
+        <param name="Состав">100% лен</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-01-WHT-XL" group_id="A-DR-01" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-01?sku=A-DR-01-WHT-XL</url>
+        <price>12990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-01-wht-2.jpg</picture>
+        <name>Платье белое миди из льна</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">лен</param>
+        <param name="Состав">100% лен</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-02-WHT-XS" group_id="A-DR-02" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-02?sku=A-DR-02-WHT-XS</url>
+        <price>59990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-2.jpg</picture>
+        <name>Свадебное платье белое в пол</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D900</vendorCode>
+        <description>Свадебная коллекция.</description>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">шелк</param>
+        <param name="Состав">100% шелк</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-02-WHT-S" group_id="A-DR-02" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-02?sku=A-DR-02-WHT-S</url>
+        <price>59990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-2.jpg</picture>
+        <name>Свадебное платье белое в пол</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D900</vendorCode>
+        <description>Свадебная коллекция.</description>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">шелк</param>
+        <param name="Состав">100% шелк</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-02-WHT-M" group_id="A-DR-02" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-02?sku=A-DR-02-WHT-M</url>
+        <price>59990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-2.jpg</picture>
+        <name>Свадебное платье белое в пол</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D900</vendorCode>
+        <description>Свадебная коллекция.</description>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">шелк</param>
+        <param name="Состав">100% шелк</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-02-WHT-L" group_id="A-DR-02" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-02?sku=A-DR-02-WHT-L</url>
+        <price>59990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-2.jpg</picture>
+        <name>Свадебное платье белое в пол</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D900</vendorCode>
+        <description>Свадебная коллекция.</description>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">шелк</param>
+        <param name="Состав">100% шелк</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-02-WHT-XL" group_id="A-DR-02" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-02?sku=A-DR-02-WHT-XL</url>
+        <price>59990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-02-wht-2.jpg</picture>
+        <name>Свадебное платье белое в пол</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-D900</vendorCode>
+        <description>Свадебная коллекция.</description>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">шелк</param>
+        <param name="Состав">100% шелк</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-03-BLU-XS" group_id="A-DR-03" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-03?sku=A-DR-03-BLU-XS</url>
+        <price>15990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-2.jpg</picture>
+        <name>Платье миди для торжества</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D200</vendorCode>
+        <description>Подойдёт для свадьбы подруги или вечернего мероприятия.</description>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">темно-синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">100% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-03-BLU-S" group_id="A-DR-03" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-03?sku=A-DR-03-BLU-S</url>
+        <price>15990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-2.jpg</picture>
+        <name>Платье миди для торжества</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D200</vendorCode>
+        <description>Подойдёт для свадьбы подруги или вечернего мероприятия.</description>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">темно-синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">100% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-03-BLU-M" group_id="A-DR-03" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-03?sku=A-DR-03-BLU-M</url>
+        <price>15990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-2.jpg</picture>
+        <name>Платье миди для торжества</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D200</vendorCode>
+        <description>Подойдёт для свадьбы подруги или вечернего мероприятия.</description>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">темно-синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">100% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-03-BLU-L" group_id="A-DR-03" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-03?sku=A-DR-03-BLU-L</url>
+        <price>15990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-2.jpg</picture>
+        <name>Платье миди для торжества</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D200</vendorCode>
+        <description>Подойдёт для свадьбы подруги или вечернего мероприятия.</description>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">темно-синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">100% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-DR-03-BLU-XL" group_id="A-DR-03" available="true">
+        <url>https://demo-shop-a.example/p/a-dr-03?sku=A-DR-03-BLU-XL</url>
+        <price>15990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>7</categoryId>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-dr-03-blu-2.jpg</picture>
+        <name>Платье миди для торжества</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-D200</vendorCode>
+        <description>Подойдёт для свадьбы подруги или вечернего мероприятия.</description>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">темно-синий</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">вискоза</param>
+        <param name="Состав">100% вискоза</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SK-01-GRY-XS" group_id="A-SK-01" available="true">
+        <url>https://demo-shop-a.example/p/a-sk-01?sku=A-SK-01-GRY-XS</url>
+        <price>12490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-2.jpg</picture>
+        <name>Юбка миди из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">серый меланж</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">60% шерсть, 40% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SK-01-GRY-S" group_id="A-SK-01" available="true">
+        <url>https://demo-shop-a.example/p/a-sk-01?sku=A-SK-01-GRY-S</url>
+        <price>12490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-2.jpg</picture>
+        <name>Юбка миди из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">серый меланж</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">60% шерсть, 40% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SK-01-GRY-M" group_id="A-SK-01" available="true">
+        <url>https://demo-shop-a.example/p/a-sk-01?sku=A-SK-01-GRY-M</url>
+        <price>12490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-2.jpg</picture>
+        <name>Юбка миди из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">серый меланж</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">60% шерсть, 40% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SK-01-GRY-L" group_id="A-SK-01">
+        <url>https://demo-shop-a.example/p/a-sk-01?sku=A-SK-01-GRY-L</url>
+        <price>12490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-2.jpg</picture>
+        <name>Юбка миди из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">серый меланж</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">60% шерсть, 40% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SK-01-GRY-XL" group_id="A-SK-01" available="true">
+        <url>https://demo-shop-a.example/p/a-sk-01?sku=A-SK-01-GRY-XL</url>
+        <price>12490.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>8</categoryId>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-sk-01-gry-2.jpg</picture>
+        <name>Юбка миди из шерсти</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-S100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">серый меланж</param>
+        <param name="Код цвета">GRY</param>
+        <param name="Материал">шерсть</param>
+        <param name="Состав">60% шерсть, 40% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-LOF-01-BLK-37" group_id="A-LOF-01" available="true">
+        <url>https://demo-shop-a.example/p/a-lof-01?sku=A-LOF-01-BLK-37</url>
+        <price>18990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-a.example/img/a-lof-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-lof-01-blk-2.jpg</picture>
+        <name>Лоферы кожаные</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">37</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-LOF-01-BLK-38" group_id="A-LOF-01" available="true">
+        <url>https://demo-shop-a.example/p/a-lof-01?sku=A-LOF-01-BLK-38</url>
+        <price>25000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-a.example/img/a-lof-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-lof-01-blk-2.jpg</picture>
+        <name>Лоферы кожаные</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">38</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-LOF-01-BLK-39" group_id="A-LOF-01" available="true">
+        <url>https://demo-shop-a.example/p/a-lof-01?sku=A-LOF-01-BLK-39</url>
+        <price>18990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>10</categoryId>
+        <picture>https://demo-shop-a.example/img/a-lof-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-lof-01-blk-2.jpg</picture>
+        <name>Лоферы кожаные</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-L100</vendorCode>
+        <param name="Размер" unit="EU">39</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SNK-01-WHT-37" group_id="A-SNK-01" available="true">
+        <url>https://demo-shop-a.example/p/a-snk-01?sku=A-SNK-01-WHT-37</url>
+        <price>10990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>11</categoryId>
+        <picture>https://demo-shop-a.example/img/a-snk-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-snk-01-wht-2.jpg</picture>
+        <name>Кроссовки белые базовые</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-S200</vendorCode>
+        <param name="Размер" unit="EU">37</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SNK-01-WHT-38" group_id="A-SNK-01" available="false">
+        <url>https://demo-shop-a.example/p/a-snk-01?sku=A-SNK-01-WHT-38</url>
+        <price>10990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>11</categoryId>
+        <picture>https://demo-shop-a.example/img/a-snk-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-snk-01-wht-2.jpg</picture>
+        <name>Кроссовки белые базовые</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-S200</vendorCode>
+        <param name="Размер" unit="EU">38</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-SNK-01-WHT-39" group_id="A-SNK-01" available="false">
+        <url>https://demo-shop-a.example/p/a-snk-01?sku=A-SNK-01-WHT-39</url>
+        <price>10990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>11</categoryId>
+        <picture>https://demo-shop-a.example/img/a-snk-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-snk-01-wht-2.jpg</picture>
+        <name>Кроссовки белые базовые</name>
+        <vendor>Nord Demo</vendor>
+        <vendorCode>ND-S200</vendorCode>
+        <param name="Размер" unit="EU">39</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BAG-01-BRD-OS" group_id="A-BAG-01" available="true">
+        <url>https://demo-shop-a.example/p/a-bag-01?sku=A-BAG-01-BRD-OS</url>
+        <price>17990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>13</categoryId>
+        <picture>https://demo-shop-a.example/img/a-bag-01-brd-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-bag-01-brd-2.jpg</picture>
+        <name>Сумка бордовая через плечо</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-B100</vendorCode>
+        <param name="Цвет">бордовый</param>
+        <param name="Код цвета">BRD</param>
+        <param name="Материал">натуральная кожа</param>
+        <param name="Состав">100% кожа</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JN-01-BLU-XS" group_id="A-JN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jn-01?sku=A-JN-01-BLU-XS</url>
+        <price>6990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-2.jpg</picture>
+        <name>Джинсы широкие удлинённые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN100</vendorCode>
+        <description>Удлинённая модель, длина по внутреннему шву 84 см.</description>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">голубой</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">99% хлопок, 1% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JN-01-BLU-S" group_id="A-JN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jn-01?sku=A-JN-01-BLU-S</url>
+        <price>6990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-2.jpg</picture>
+        <name>Джинсы широкие удлинённые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN100</vendorCode>
+        <description>Удлинённая модель, длина по внутреннему шву 84 см.</description>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">голубой</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">99% хлопок, 1% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JN-01-BLU-M" group_id="A-JN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jn-01?sku=A-JN-01-BLU-M</url>
+        <price>6990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-2.jpg</picture>
+        <name>Джинсы широкие удлинённые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN100</vendorCode>
+        <description>Удлинённая модель, длина по внутреннему шву 84 см.</description>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">голубой</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">99% хлопок, 1% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JN-01-BLU-L" group_id="A-JN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jn-01?sku=A-JN-01-BLU-L</url>
+        <price>6990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-2.jpg</picture>
+        <name>Джинсы широкие удлинённые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN100</vendorCode>
+        <description>Удлинённая модель, длина по внутреннему шву 84 см.</description>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">голубой</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">99% хлопок, 1% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JN-01-BLU-XL" group_id="A-JN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-jn-01?sku=A-JN-01-BLU-XL</url>
+        <price>6990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>14</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jn-01-blu-2.jpg</picture>
+        <name>Джинсы широкие удлинённые</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-JN100</vendorCode>
+        <description>Удлинённая модель, длина по внутреннему шву 84 см.</description>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">голубой</param>
+        <param name="Код цвета">BLU</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">99% хлопок, 1% эластан</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-KN-01-BEI-XS" group_id="A-KN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-kn-01?sku=A-KN-01-BEI-XS</url>
+        <price>21990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-2.jpg</picture>
+        <name>Свитер из кашемира</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-K100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">кэмел</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">кашемир</param>
+        <param name="Состав">100% кашемир</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-KN-01-BEI-S" group_id="A-KN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-kn-01?sku=A-KN-01-BEI-S</url>
+        <price>21990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-2.jpg</picture>
+        <name>Свитер из кашемира</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-K100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">кэмел</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">кашемир</param>
+        <param name="Состав">100% кашемир</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-KN-01-BEI-M" group_id="A-KN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-kn-01?sku=A-KN-01-BEI-M</url>
+        <price>21990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-2.jpg</picture>
+        <name>Свитер из кашемира</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-K100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">кэмел</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">кашемир</param>
+        <param name="Состав">100% кашемир</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-KN-01-BEI-L" group_id="A-KN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-kn-01?sku=A-KN-01-BEI-L</url>
+        <price>21990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-2.jpg</picture>
+        <name>Свитер из кашемира</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-K100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">кэмел</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">кашемир</param>
+        <param name="Состав">100% кашемир</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-KN-01-BEI-XL" group_id="A-KN-01" available="true">
+        <url>https://demo-shop-a.example/p/a-kn-01?sku=A-KN-01-BEI-XL</url>
+        <price>21990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>15</categoryId>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-kn-01-bei-2.jpg</picture>
+        <name>Свитер из кашемира</name>
+        <vendor>Demo Classic</vendor>
+        <vendorCode>DC-K100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">кэмел</param>
+        <param name="Код цвета">BEI</param>
+        <param name="Материал">кашемир</param>
+        <param name="Состав">100% кашемир</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-BLK-XS" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-BLK-XS</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-BLK-S" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-BLK-S</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-BLK-M" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-BLK-M</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-BLK-L" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-BLK-L</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-BLK-XL" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-BLK-XL</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-blk-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">черный</param>
+        <param name="Код цвета">BLK</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-WHT-XS" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-WHT-XS</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">XS</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-WHT-S" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-WHT-S</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-WHT-M" group_id="A-TS-01">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-WHT-M</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-WHT-L" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-WHT-L</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">L</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-TS-01-WHT-XL" group_id="A-TS-01" available="true">
+        <url>https://demo-shop-a.example/p/a-ts-01?sku=A-TS-01-WHT-XL</url>
+        <price>1990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>16</categoryId>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-ts-01-wht-2.jpg</picture>
+        <name>Футболка базовая</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-TS100</vendorCode>
+        <param name="Размер" unit="INT">XL</param>
+        <param name="Цвет">белый</param>
+        <param name="Код цвета">WHT</param>
+        <param name="Материал">хлопок</param>
+        <param name="Состав">100% хлопок</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BROKEN-PIC" group_id="A-BROKEN" available="true">
+        <url>https://demo-shop-a.example/p/a-broken?sku=A-BROKEN-PIC</url>
+        <price>1000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">X</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BROKEN-PRICE" group_id="A-BROKEN" available="true">
+        <url>https://demo-shop-a.example/p/a-broken?sku=A-BROKEN-PRICE</url>
+        <price>-100</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-broken-x-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-broken-x-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">X</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-BROKEN-URL" group_id="A-BROKEN" available="true">
+        <url>https://evil.example/phish</url>
+        <price>1000.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-broken-x-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-broken-x-2.jpg</picture>
+        <name>Куртка из натуральной замши оверсайз</name>
+        <vendor>Demo Atelier</vendor>
+        <vendorCode>DA-J100</vendorCode>
+        <param name="Размер" unit="INT">M</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">X</param>
+        <param name="Материал">натуральная замша</param>
+        <param name="Состав">100% замша</param>
+        <param name="Посадка">оверсайз</param>
+        <param name="Пол">женский</param>
+      </offer>
+      <offer id="A-JKT-02-BRN-S" group_id="A-JKT-02" available="true">
+        <url>https://demo-shop-a.example/p/a-jkt-02?sku=A-JKT-02-BRN-S</url>
+        <price>8990.00</price>
+        <currencyId>RUR</currencyId>
+        <categoryId>3</categoryId>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-1.jpg</picture>
+        <picture>https://demo-shop-a.example/img/a-jkt-02-brn-2.jpg</picture>
+        <name>Куртка под замшу укороченная</name>
+        <vendor>Urban Demo</vendor>
+        <vendorCode>UD-J210</vendorCode>
+        <param name="Размер" unit="INT">S</param>
+        <param name="Цвет">коричневый</param>
+        <param name="Код цвета">BRN</param>
+        <param name="Материал">искусственная замша</param>
+        <param name="Состав">100% полиэстер</param>
+        <param name="Пол">женский</param>
+      </offer>
+    </offers>
+  </shop>
+</yml_catalog>

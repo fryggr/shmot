@@ -1,0 +1,111 @@
+:root {
+  --bg: #fafaf8;
+  --fg: #1d1d1b;
+  --muted: #6b6b66;
+  --line: #e4e3de;
+  --accent: #2f4f3a;
+  --warn-bg: #fff4e0;
+  --warn-fg: #7a4b00;
+  --err-bg: #fdecec;
+  --err-fg: #8a1f1f;
+  --card: #ffffff;
+}
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #161615;
+    --fg: #ecebe6;
+    --muted: #a3a29b;
+    --line: #2e2e2b;
+    --accent: #8fc29f;
+    --warn-bg: #3a2c12;
+    --warn-fg: #f2c879;
+    --err-bg: #3a1717;
+    --err-fg: #f3a3a3;
+    --card: #1f1f1d;
+  }
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0;
+  background: var(--bg);
+  color: var(--fg);
+  font: 16px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+}
+a { color: inherit; }
+main { max-width: 1200px; margin: 0 auto; padding: 16px; min-height: 70vh; }
+h1 { font-size: 1.8rem; line-height: 1.2; margin: 0.5em 0; }
+.site-header { display: flex; gap: 12px; align-items: center; padding: 12px 16px; border-bottom: 1px solid var(--line); }
+.logo { font-weight: 700; text-decoration: none; }
+.site-footer { padding: 24px 16px; color: var(--muted); font-size: 0.85rem; border-top: 1px solid var(--line); text-align: center; }
+.badge { display: inline-block; margin-left: 8px; padding: 2px 8px; border-radius: 999px; background: var(--warn-bg); color: var(--warn-fg); font-size: 0.75rem; font-weight: 600; }
+.muted { color: var(--muted); }
+.small { font-size: 0.85rem; }
+.warn { color: var(--warn-fg); background: var(--warn-bg); padding: 4px 8px; border-radius: 6px; font-size: 0.85rem; margin: 6px 0; }
+.button, button {
+  display: inline-block; padding: 10px 16px; border-radius: 8px; border: 0; cursor: pointer;
+  background: var(--accent); color: var(--bg); font: inherit; font-weight: 600; text-decoration: none;
+}
+.hero { max-width: 720px; margin: 8vh auto; text-align: center; }
+.hero h1 { font-size: 2.4rem; }
+.examples { display: flex; flex-wrap: wrap; gap: 8px; justify-content: center; margin: 16px 0; }
+.examples a { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; text-decoration: none; }
+.demo-note { background: var(--warn-bg); color: var(--warn-fg); padding: 10px 14px; border-radius: 8px; }
+.searchbar { display: flex; gap: 8px; margin: 8px 0 16px; }
+.searchbar input { flex: 1; min-width: 0; padding: 12px 14px; border: 1px solid var(--line); border-radius: 8px; font: inherit; background: var(--card); color: var(--fg); }
+.results-layout { display: grid; grid-template-columns: 240px 1fr; gap: 24px; }
+.results-head { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 8px; margin-bottom: 12px; }
+.sorts { display: flex; gap: 12px; flex-wrap: wrap; }
+.sorts a { text-decoration: none; color: var(--muted); }
+.sorts a.active { color: var(--fg); font-weight: 600; text-decoration: underline; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; }
+.card { background: var(--card); border: 1px solid var(--line); border-radius: 10px; overflow: hidden; }
+.card-link { text-decoration: none; display: block; height: 100%; }
+.card-img { aspect-ratio: 3 / 4; background: var(--line); }
+.card-img img, .gallery img { width: 100%; height: 100%; object-fit: cover; display: block; }
+.img-placeholder { width: 100%; height: 100%; min-height: 160px; display: flex; align-items: center; justify-content: center; color: var(--muted); font-size: 0.85rem; text-align: center; padding: 8px; background: var(--line); }
+.card-body { padding: 10px 12px 14px; }
+.card-body h3 { font-size: 0.95rem; font-weight: 500; margin: 2px 0 6px; }
+.brand { font-weight: 700; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.02em; text-decoration: none; }
+.price { font-weight: 700; }
+.price s { color: var(--muted); font-weight: 400; margin-left: 8px; }
+.sizes { font-size: 0.8rem; color: var(--muted); margin-top: 4px; }
+.filters fieldset { border: 0; padding: 0; margin: 16px 0; }
+.filters legend { font-weight: 600; margin-bottom: 4px; }
+.filters .check { display: flex; gap: 8px; align-items: center; padding: 2px 0; }
+.filters .range label { display: block; font-size: 0.85rem; margin: 8px 0; }
+.filters .range input { width: 100%; padding: 8px; border: 1px solid var(--line); border-radius: 6px; font: inherit; background: var(--card); color: var(--fg); }
+.filters .row { display: flex; gap: 8px; }
+.filters-head, .filters-toggle { display: none; }
+.state { padding: 24px; border: 1px dashed var(--line); border-radius: 10px; text-align: center; margin: 16px 0; }
+.state.error { background: var(--err-bg); color: var(--err-fg); border-color: transparent; }
+.state.warn { background: var(--warn-bg); color: var(--warn-fg); border-color: transparent; text-align: left; }
+.relax { list-style: none; padding: 0; }
+.more { margin: 24px 0; }
+.product { display: grid; grid-template-columns: 1fr 1fr; gap: 32px; }
+.gallery { display: grid; grid-template-columns: 1fr 1fr; gap: 8px; align-content: start; }
+.gallery > * { aspect-ratio: 3 / 4; }
+.attrs div { display: flex; gap: 12px; padding: 4px 0; border-bottom: 1px solid var(--line); }
+.attrs dt { min-width: 100px; color: var(--muted); }
+.attrs dd { margin: 0; }
+.offers { list-style: none; padding: 0; }
+.offers li { border: 1px solid var(--line); border-radius: 10px; padding: 12px 14px; margin-bottom: 12px; background: var(--card); }
+.offers li.inactive { opacity: 0.6; }
+.offer-head { display: flex; justify-content: space-between; gap: 8px; }
+.size-list { display: flex; flex-wrap: wrap; gap: 6px; margin: 8px 0; }
+.size { border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px; font-size: 0.85rem; }
+.size.out_of_stock { text-decoration: line-through; color: var(--muted); }
+.size.unknown { border-style: dashed; }
+
+@media (max-width: 760px) {
+  .results-layout { grid-template-columns: 1fr; }
+  .product { grid-template-columns: 1fr; }
+  .filters-toggle { display: inline-block; margin-bottom: 12px; }
+  .filters { display: none; }
+  .filters.open {
+    display: block; position: fixed; inset: 0; z-index: 10; overflow-y: auto;
+    background: var(--bg); padding: 16px;
+  }
+  .filters-head { display: flex; justify-content: space-between; align-items: center; }
+  .filters-head .close { padding: 4px 12px; }
+  .hero h1 { font-size: 1.8rem; }
+}

@@ -1,0 +1,113 @@
+# Локальный стенд: docker compose -f infra/compose.yaml up --build
+# Web: http://localhost:3000   API: http://localhost:8000/docs
+name: fashion-search
+
+x-python: &python
+  build:
+    context: ..
+    dockerfile: infra/python.Dockerfile
+  env_file:
+    - path: ../.env
+      required: false
+  environment: &python-env
+    DATABASE_URL: postgresql://fashion:fashion@postgres:5432/fashion
+    REDIS_URL: redis://redis:6379/0
+    OBJECT_STORAGE_ENDPOINT: http://objectstore:8333
+    OBJECT_STORAGE_BUCKET: feed-snapshots
+    OBJECT_STORAGE_ACCESS_KEY: ${OBJECT_STORAGE_ACCESS_KEY:-local-dev}
+    OBJECT_STORAGE_SECRET_KEY: ${OBJECT_STORAGE_SECRET_KEY:-local-dev}
+    AWS_REQUEST_CHECKSUM_CALCULATION: when_required
+    AWS_RESPONSE_CHECKSUM_VALIDATION: when_required
+    # Демо-фиды из образа; реальные URL фидов задаются только через секреты (.env), не в git
+    FEED_URL_DEMO_SHOP_A: ${FEED_URL_DEMO_SHOP_A:-fixture://demo_shop_a_v1.yml}
+    FEED_URL_DEMO_SHOP_B: ${FEED_URL_DEMO_SHOP_B:-fixture://demo_shop_b_v1.yml}
+    INTERNAL_API_TOKEN: ${INTERNAL_API_TOKEN:-change-me-local-only}
+    CURSOR_SECRET: ${CURSOR_SECRET:-change-me-local-only}
+
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.0-pg16
+    environment:
+      POSTGRES_USER: fashion
+      POSTGRES_PASSWORD: fashion
+      POSTGRES_DB: fashion
+    volumes: [pgdata:/var/lib/postgresql/data]
+    ports: ["127.0.0.1:5432:5432"]
+    healthcheck:
+      test: ["CMD-SHELL", "pg_isready -U fashion -d fashion"]
+      interval: 3s
+      retries: 30
+
+  redis:
+    image: redis:7.4-alpine
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 3s
+      retries: 30
+
+  # Локальное S3-совместимое хранилище закрытых снимков фидов (порт наружу не публикуется)
+  objectstore:
+    image: chrislusf/seaweedfs:3.97
+    command: server -dir=/data -s3 -s3.port=8333 -master.volumeSizeLimitMB=256
+    volumes: [snapshots:/data]
+    healthcheck:
+      test: ["CMD-SHELL", "wget -q -O /dev/null http://127.0.0.1:8333/ || exit 1"]
+      interval: 3s
+      retries: 40
+
+  # Этап 3: лексический индекс и фасеты. Запуск: --profile search
+  opensearch:
+    image: opensearchproject/opensearch:2.19.1
+    profiles: [search]
+    environment:
+      discovery.type: single-node
+      DISABLE_SECURITY_PLUGIN: "true"
+      DISABLE_INSTALL_DEMO_CONFIG: "true"
+      OPENSEARCH_JAVA_OPTS: -Xms512m -Xmx512m
+    ports: ["127.0.0.1:9200:9200"]
+
+  init:
+    <<: *python
+    command: ["/app/infra/init.sh"]
+    environment:
+      <<: *python-env
+      DEMO_IMPORT_ON_START: ${DEMO_IMPORT_ON_START:-1}
+    depends_on:
+      postgres: {condition: service_healthy}
+      objectstore: {condition: service_healthy}
+    restart: "no"
+
+  api:
+    <<: *python
+    ports: ["127.0.0.1:8000:8000"]
+    depends_on:
+      init: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+    healthcheck:
+      test: ["CMD", "python", "-c", "import urllib.request; urllib.request.urlopen('http://localhost:8000/health/live')"]
+      interval: 5s
+      retries: 20
+
+  worker:
+    <<: *python
+    command: ["fashion-worker", "run"]
+    depends_on:
+      init: {condition: service_completed_successfully}
+      redis: {condition: service_healthy}
+      objectstore: {condition: service_healthy}
+
+  web:
+    build:
+      context: ..
+      dockerfile: infra/web.Dockerfile
+      args:
+        API_INTERNAL_URL: http://api:8000
+    environment:
+      API_INTERNAL_URL: http://api:8000
+    ports: ["127.0.0.1:3000:3000"]
+    depends_on:
+      api: {condition: service_healthy}
+
+volumes:
+  pgdata:
+  snapshots:

@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "fashion-worker"
+version = "0.1.0"
+description = "Import/indexing worker for Fashion Search POC"
+requires-python = ">=3.11"
+dependencies = [
+  "fashion-domain",
+  "defusedxml==0.7.1",
+  "httpx==0.28.1",
+  "redis==8.1.0",
+]
+
+[project.scripts]
+fashion-worker = "fashion_worker.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["fashion_worker*"]

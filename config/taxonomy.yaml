@@ -1,0 +1,46 @@
+# Минимальное дерево категорий. Ключи — стабильные code; русские title только для отображения.
+# keywords — подстроки (lower-case) пути категории источника, по которым правило
+# сопоставляет категорию. Порядок важен: более специфичные листья проверяются первыми.
+version: taxonomy-v1
+categories:
+  - code: outerwear
+    title: Верхняя одежда
+    size_kind: apparel
+    keywords: [верхняя одежда]
+    children:
+      - {code: coat, title: Пальто, keywords: [пальто]}
+      - {code: trench, title: Тренчи, keywords: [тренч, плащ]}
+      - {code: bomber, title: Бомберы, keywords: [бомбер]}
+      - {code: puffer, title: Пуховики, keywords: [пуховик]}
+      - {code: jacket, title: Куртки, keywords: [куртк, жакет]}
+  - code: tops
+    title: Верх
+    size_kind: apparel
+    keywords: [верх]
+    children:
+      - {code: shirt, title: Рубашки, keywords: [рубашк]}
+      - {code: blouse, title: Блузки, keywords: [блуз]}
+      - {code: tshirt, title: Футболки, keywords: [футболк]}
+      - {code: top, title: Топы, keywords: [топ]}
+      - {code: knitwear, title: Трикотаж, keywords: [свитер, джемпер, кардиган, трикотаж]}
+  - code: bottoms
+    title: Низ
+    size_kind: apparel
+    keywords: [низ]
+    children:
+      - {code: jeans, title: Джинсы, keywords: [джинс]}
+      - {code: trousers, title: Брюки, keywords: [брюк]}
+      - {code: skirt, title: Юбки, keywords: [юбк]}
+      - {code: shorts, title: Шорты, keywords: [шорт]}
+  - {code: dresses, title: Платья, size_kind: apparel, keywords: [плать]}
+  - code: shoes
+    title: Обувь
+    size_kind: shoes
+    keywords: [обувь]
+    children:
+      - {code: sneakers, title: Кроссовки, keywords: [кроссовк, кеды]}
+      - {code: boots, title: Ботинки и сапоги, keywords: [ботин, сапог, челси]}
+      - {code: loafers, title: Лоферы, keywords: [лофер]}
+      - {code: sandals, title: Сандалии, keywords: [сандал, босонож]}
+  - {code: bags, title: Сумки, size_kind: accessory, keywords: [сумк, рюкзак]}
+  - {code: accessories, title: Аксессуары, size_kind: accessory, keywords: [аксессуар, ремн, шарф, шапк]}
