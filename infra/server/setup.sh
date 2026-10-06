@@ -5,6 +5,9 @@
 set -euo pipefail
 
 DEPLOY_USER=${DEPLOY_USER:-deploy}
+# Без интерактивных вопросов apt (раскладка клавиатуры, конфликты конфигов — оставляем текущие)
+export DEBIAN_FRONTEND=noninteractive
+APT_OPTS=(-y -o Dpkg::Options::=--force-confdef -o Dpkg::Options::=--force-confold)
 
 # Вход по паролю будет отключён — без SSH-ключа root-а можно потерять доступ к серверу
 if [ ! -s /root/.ssh/authorized_keys ]; then
@@ -13,8 +16,8 @@ if [ ! -s /root/.ssh/authorized_keys ]; then
 fi
 
 apt-get update
-apt-get -y upgrade
-apt-get -y install ca-certificates curl git ufw fail2ban unattended-upgrades
+apt-get "${APT_OPTS[@]}" upgrade
+apt-get "${APT_OPTS[@]}" install ca-certificates curl git ufw fail2ban unattended-upgrades
 
 # Docker Engine + compose plugin из официального репозитория Docker
 install -m 0755 -d /etc/apt/keyrings
@@ -24,7 +27,7 @@ chmod a+r /etc/apt/keyrings/docker.asc
 echo "deb [arch=$(dpkg --print-architecture) signed-by=/etc/apt/keyrings/docker.asc] https://download.docker.com/linux/ubuntu ${VERSION_CODENAME} stable" \
   > /etc/apt/sources.list.d/docker.list
 apt-get update
-apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+apt-get "${APT_OPTS[@]}" install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 # Пользователь для деплоя (вход только по SSH-ключу root-а, если он уже настроен)
 if ! id "$DEPLOY_USER" >/dev/null 2>&1; then
