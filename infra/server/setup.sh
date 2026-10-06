@@ -6,6 +6,12 @@ set -euo pipefail
 
 DEPLOY_USER=${DEPLOY_USER:-deploy}
 
+# Вход по паролю будет отключён — без SSH-ключа root-а можно потерять доступ к серверу
+if [ ! -s /root/.ssh/authorized_keys ]; then
+  echo "Нет SSH-ключа в /root/.ssh/authorized_keys. Сначала с вашего компьютера: ssh-copy-id root@<IP>" >&2
+  exit 1
+fi
+
 apt-get update
 apt-get -y upgrade
 apt-get -y install ca-certificates curl git ufw fail2ban unattended-upgrades
