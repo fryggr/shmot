@@ -2,6 +2,9 @@
 	email {$ACME_EMAIL}
 }
 
+# DOMAIN: «example.ru» — HTTPS с автоматическим сертификатом;
+#         «example.ru, www.example.ru» — несколько адресов;
+#         «http://<IP>» — временно, пока домен не привязан (без шифрования).
 {$DOMAIN} {
 	encode zstd gzip
 
@@ -20,9 +23,4 @@
 	}
 
 	reverse_proxy web:3000
-}
-
-# www → основной домен
-www.{$DOMAIN} {
-	redir https://{$DOMAIN}{uri} permanent
 }
