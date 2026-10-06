@@ -48,9 +48,10 @@ ufw allow 443/tcp
 ufw allow 443/udp
 ufw --force enable
 
-# SSH: только ключи
-sed -i 's/^#\?PasswordAuthentication .*/PasswordAuthentication no/' /etc/ssh/sshd_config
-systemctl reload ssh || systemctl reload sshd || true
+# SSH: только ключи. Файл в sshd_config.d с префиксом 00 читается первым и перекрывает
+# PasswordAuthentication yes из 50-cloud-init.conf, который ставят многие провайдеры.
+printf 'PasswordAuthentication no\nKbdInteractiveAuthentication no\n' > /etc/ssh/sshd_config.d/00-shmot.conf
+sshd -t && (systemctl reload ssh || systemctl reload sshd || true)
 
 # Swap 2 ГБ — сборка Next.js на маленьком сервере
 if ! swapon --show | grep -q /swapfile; then
